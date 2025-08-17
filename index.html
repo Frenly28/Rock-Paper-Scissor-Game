@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>ROCK PAPER SCISSORS GAME</h1>
+      <h2>CHOOSE YOUR MOVE</h2>
+      <div class="buttons">
+        <button class="rock" disabled>👊</button>
+        <button class="paper" disabled>✋</button>
+        <button class="scissors" disabled>✌️</button>
+      </div>
+
+      <div class="game-settings">
+        <h3>Select Game Mode:</h3>
+        <button id="raceto3" class="race" data-score="3">
+          Race to 3
+        </button>
+        <button id="raceto5" class="race" data-score="5">
+          Race to 5
+        </button>
+        <button id="raceto7" class="race" data-score="7">
+          Race to 7
+        </button>
+      </div>
+
+      <div class="reset-container">
+        <button class="reset">🔄 Reset Game</button>
+      </div>
+
+      <div class="result">
+        <span class="resultText"></span>
+      </div>
+      <div class="pScore">
+        <span>Your Score:</span>
+        <span class="pScoreText">0</span>
+      </div>
+      <div class="compScore">
+        <span>Computer Score:</span>
+        <span class="compScoreText">0</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

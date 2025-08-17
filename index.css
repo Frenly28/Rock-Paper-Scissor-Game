@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #000;
+  font-family: 'Press Start 2P', cursive;
+  color: #00ff00;
+  text-shadow: 0 0 3px #0f0, 0 0 6px #0f0, 0 0 12px #0f0;
+}
+
+.game-container {
+  background: #111;
+  padding: 2rem;
+  border: 4px solid #0ff;
+  border-radius: 8px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #ff0;
+  text-shadow: 0 0 3px #ff0, 0 0 6px #ff0;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+  color: #0ff;
+  text-shadow: 0 0 2px #0ff, 0 0 4px #0ff;
+  margin-bottom: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 3rem;
+}
+
+.buttons button {
+  font-size: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #0ff;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #222;
+  color: #0ff;
+  text-shadow: 0 0 2px #0ff, 0 0 4px #0ff;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.buttons button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #0ff, 0 0 20px #ff0;
+}
+
+.buttons button:disabled {
+  background-color: #333;
+  color: #555;
+  border-color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.game-settings h3 {
+  font-size: 0.8rem;
+  color: #ff0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 2px #ff0, 0 0 4px #ff0;
+}
+
+.game-settings .race {
+  font-size: 0.7rem;
+  margin: 1rem 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: 2px solid #ff0;
+  cursor: pointer;
+  background: #111;
+  color: #ff0;
+  text-shadow: 0 0 2px #ff0, 0 0 4px #ff0;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.game-settings .race:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ff0, 0 0 20px #0ff;
+}
+
+.reset {
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  border: 2px solid #f0f;
+  cursor: pointer;
+  background: #111;
+  color: #f0f;
+  text-shadow: 0 0 2px #f0f, 0 0 4px #f0f;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #f0f, 0 0 20px #ff0;
+}
+
+.result {
+  display: none;
+  margin: 2rem 0 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  min-height: 28px;
+  color: #0ff;
+  text-shadow: 0 0 2px #0ff, 0 0 4px #0ff;
+}
+
+.pScore,
+.compScore {
+  font-size: 0.8rem;
+  margin: 0.3rem 0;
+  text-shadow: 0 0 1px #0ff, 0 0 2px #0ff;
+}
+
+.pScoreText {
+  color: #0ff;
+}
+
+.compScoreText {
+  color: #f0f;
+}
+
+.reset {
+  display: none;
+}
